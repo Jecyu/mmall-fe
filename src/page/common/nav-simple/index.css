@@ -1,0 +1,20 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-11 11:24:16 pm 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-11 11:37:43 pm 
+ */
+
+ .nav-simple {
+     height: 60px;
+     border-bottom: 1px solid #ddd;
+     
+     background: #fff;
+     line-height: 60px
+ }
+
+ .nav-simple .logo {
+     font-size: 26px;
+     font-weight: bold;
+     color: #c60023;
+ }

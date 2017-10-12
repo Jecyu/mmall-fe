@@ -1,0 +1,26 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-12 10:43:08 am 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-12 10:51:31 am 
+ */
+
+.footer {
+    padding-bottom: 10px;
+}
+
+.footer .links {
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+}
+
+.footer .links .link {
+    padding: 0 10px;
+}
+
+.footer .copyright {
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+}

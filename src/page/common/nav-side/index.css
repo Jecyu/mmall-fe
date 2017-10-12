@@ -1,0 +1,33 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-12 4:18:31 pm 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-12 6:17:52 pm 
+ */
+
+ /* 导航主体 */
+.nav-side {
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+
+.nav-side .nav-item {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.nav-side .nav-item .link {
+    color: #888;    
+}
+
+/* 选中菜单项 */
+.nav-side .nav-item.active .link {
+    color: #c60023;
+}
+
+ /* 右侧内容区 */
+.content.with-nav {
+    float: left;
+    width: 950px;
+}
