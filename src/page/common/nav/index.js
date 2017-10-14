@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-11 11:59:11 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-12 11:14:31 am 
+ * @Last Modified time: 2017-10-13 10:15:16 pm 
  */
 
  'use strict'
@@ -24,11 +24,14 @@
         $('.js-login').click(function() {
             _mm.doLogin();
         });
-
         // 注册点击事件
         $('js-register').click(function() {
-            window.location.href = './register.html';
+            console.log('test');            
+            window.location.href = './user-register.html';
         });
+
+
+        // TODO 注册点击事件无效，为什么？登录却有效
 
         // 退出点击事件（需要请求后端删除登录状态）
         $('.js-logout').click(function() {

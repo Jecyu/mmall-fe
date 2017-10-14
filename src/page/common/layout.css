@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-11 5:19:55 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-11 11:46:19 pm 
+ * @Last Modified time: 2017-10-14 10:24:33 am 
  */
 /* css reset */
 * {
@@ -39,6 +39,26 @@ input[type='checkbox'] {
 
     width: 1080px;
     margin: 0 auto;
+}
+
+/* panel */
+.panel {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.panel .panel-title {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.panel .panel-body {
+    padding: 10px;
+    overflow: hidden;
 }
 
 /* .large .w {

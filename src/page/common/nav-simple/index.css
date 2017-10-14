@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-11 11:24:16 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-11 11:37:43 pm 
+ * @Last Modified time: 2017-10-14 10:11:36 am 
  */
 
  .nav-simple {
@@ -16,5 +16,6 @@
  .nav-simple .logo {
      font-size: 26px;
      font-weight: bold;
+     text-decoration: none;
      color: #c60023;
  }

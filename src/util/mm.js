@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-09 8:57:41 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-12 5:47:40 pm 
+ * @Last Modified time: 2017-10-14 11:14:50 am 
  */
 
 'use strict';
@@ -88,10 +88,10 @@ var _mm = {
     },
     // 统一登录处理，跳到登录页,登录成功后回到先前的页面
     doLogin: function() {
-        window.location.href = './view/login.html?redirect=' + encodeURIComponent(window.location.href);                     
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);                     
     },
     goHome: function() {
-        window.location.href = './view/index.html';
+        window.location.href = './index.html';
     }         
 };
 
