@@ -2,16 +2,16 @@
  * @Author: jeCyu
  * @Date: 2017-10-14 9:37:31 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-14 4:24:55 pm 
+ * @Last Modified time: 2017-10-15 11:54:02 am 
  */
 
 'use strict'
 require('./index.css')
 require('page/common/header/index.js');
 require('page/common/nav/index.js');
-var navSide = require('page/common/nav-side/index.js');
-var _mm = require('util/mm.js');
-var _user = require('service/user-service.js');
+var navSide       = require('page/common/nav-side/index.js');
+var _mm           = require('util/mm.js');
+var _user         = require('service/user-service.js');
 var templateIndex = require('./index.string');
 
 // page逻辑

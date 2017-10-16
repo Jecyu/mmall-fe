@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-12 11:03:55 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-12 12:52:17 pm 
+ * @Last Modified time: 2017-10-15 12:21:17 pm 
  */
 
  'use strict'
@@ -14,6 +14,7 @@
  var header = {
     init: function() {
         this.bindEvent();
+        this.onload();
     },
     // 输入搜索后，加载页面
     onload: function() {

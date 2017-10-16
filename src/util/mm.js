@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-09 8:57:41 am 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-14 11:14:50 am 
+ * @Last Modified time: 2017-10-16 4:47:31 pm 
  */
 
 'use strict';
@@ -54,6 +54,7 @@ var _mm = {
         return result ? decodeURIComponent(result[2]) : null; 
     },
     // 渲染html模版
+    // 参数data必须为一个对象
     renderHtml: function(htmlTemplate, data) {
         // 编译
         var template = Hogan.compile(htmlTemplate, data),

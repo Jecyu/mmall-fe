@@ -1,0 +1,20 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-15 8:53:26 am 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-15 8:57:25 am 
+ */
+
+/* banner */
+.banner { 
+    position: relative; 
+    overflow: auto; 
+}
+
+.banner li { 
+    list-style: none; 
+}
+
+.banner ul li { 
+    float: left; 
+}

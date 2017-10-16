@@ -1,0 +1,46 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-15 7:18:56 pm 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-16 10:46:06 am 
+ */
+
+.pg-content {
+    text-align: center;
+    color: #333;
+}
+
+.pg-content .pg-item {
+    display: inline-block;
+    height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+
+    line-height: 36px;
+    background: #eee;
+    cursor: pointer;
+
+    /*CSS3属性 用户选择文本不显示样式 */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pg-content .pg-item.disabled {
+    color: #ccc;
+    background:  none;
+    cursor: auto;
+}
+
+.pg-content .pg-total {
+    margin-left: 10px;
+    background: none;
+    cursor: auto;
+}
+
+.pg-content .pg-item.active {
+    border: 1px solid #f6f6f6;
+    background: none;
+}
