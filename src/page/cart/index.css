@@ -1,0 +1,156 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-16 9:49:59 pm 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-17 12:02:31 am 
+ */
+
+.cart-table {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+}
+
+/* header */
+.cart-header {
+    background: #eee;
+}
+
+.cart-table .cart-cell {
+    height: 40px;
+    line-height: 40px;
+}
+
+.cart-table .cell-check {
+    width: 6%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.cart-table .cell-info {
+    width: 35%;
+    text-align: left;
+}
+
+/* 挪动头部商品信息，以应对正商品信息多出的列不对齐问题 */
+.cart-header .cell-info {
+    width: 45%;
+    padding-left: 106px;
+}
+
+.cart-table .cell-img {
+    width: 10%; 
+    text-align: left;
+}
+
+.cart-table .cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.cart-table .cell-price {
+    width: 10%;
+    text-align: center;
+}
+
+.cart-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+
+.cart-table .cell-count .count-input {
+    width: 60px;
+    height: 28px;
+    border: 1px solid #ddd; 
+
+    line-height: 28px;
+    vertical-align: middle;
+    outline: none;
+    color: #333;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cart-table .cell-count .count-btn {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    border: 1px solid #ddd;
+
+    line-height: 28px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cart-table .cell-total {
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-table .cell-opera {
+    width: 10%;
+    text-align: center;
+}
+
+/* footer */
+.cart-footer {
+    position: relative;
+    overflow: hidden;
+    
+    line-height: 50px;
+    background: #eee;
+}
+
+.cart-footer .select-con {
+    float: left;
+    padding-left: 20px;
+}
+
+.cart-footer .delete-con {
+    float: left;
+    margin-left: 20px;
+}
+
+.cart-footer .submit-con {
+    float: right;
+}
+
+.cart-footer .submit-con .submit-total {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #c60023;
+}
+
+.cart-footer .submit-con .btn-submit {
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    line-height: 50px;  
+}
+
+/* 错位信息 */
+.err-tip {
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    
+    color: #f60;
+    background: #eee;
+}
