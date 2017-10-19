@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-05 11:37:09 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-19 10:12:30 am 
+ * @Last Modified time: 2017-10-19 6:07:40 pm 
  */
 var webpack = require('webpack');      
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -16,10 +16,11 @@ var getHtmlConfig = function(name, title) {
     return {
         template: './src/view/'+ name +'.html',
         filename: 'view/' + name +'.html',
-        title: title,
-        inject: true,
-        hash: true,
-        chunks: ['common', name]    
+        favicon : './favicon.ico',
+        title   : title,
+        inject  : true,
+        hash    : true,
+        chunks  : ['common', name]    
     }
 }
 
@@ -41,12 +42,13 @@ var config = {
         'user-center'       : ["./src/page/user-center/index.js"],
         'user-center-update': ["./src/page/user-center-update/index.js"],
         'user-pass-update'  : ["./src/page/user-pass-update/index.js"],
-        'result'            : ['./src/page/result/index.js']
+        'result'            : ['./src/page/result/index.js'],
+        'about'             : ['./src/page/about/index.js']
     },
     output: {
-        path: "./dist",//打包后的文件存放的地方
-        publicPath: '/dist',  // 浏览器访问依赖包的路径
-        filename: 'js/[name].js' //打包后输出文件的文件名
+        path      : __dirname + "/dist",//打包后的文件存放的地方
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',  // 浏览器访问依赖包的路径
+        filename  : 'js/[name].js' //打包后输出文件的文件名
     },
     externals: {
         'jquery': 'window.jQuery'
@@ -54,10 +56,10 @@ var config = {
     resolve: {
         alias: {
             node_modules: __dirname + '/node_modules',
-            util: __dirname + '/src/util',
-            image: __dirname + '/src/image',
-            page: __dirname + '/src/page',
-            service: __dirname + '/src/service',
+            util        : __dirname + '/src/util',
+            image       : __dirname + '/src/image',
+            page        : __dirname + '/src/page',
+            service     : __dirname + '/src/service',
         }
     },
     // devServer: {
@@ -87,7 +89,12 @@ var config = {
             },
             
             { 
-                test: /\.string$/, loader: 'html-loader' 
+                test  : /\.string$/, 
+                loader: 'html-loader',
+                query : {
+                    minimize: true,
+                    removeAtrributeQuotes: false
+                } 
             }
         ]
     },
@@ -114,7 +121,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '更改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
-        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
+        new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于MMall'))
     ]
 }
 
