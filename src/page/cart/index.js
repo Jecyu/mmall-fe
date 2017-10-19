@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-16 9:50:08 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-17 12:12:06 pm 
+ * @Last Modified time: 2017-10-17 4:16:34 pm 
  */
 
 'use strict';
@@ -147,7 +147,7 @@ var page = {
         $(document).on('click', '.btn-submit', function() {
             // 总价大于0，进行提交
             if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0) {
-                window.location.href = './confirm.html'  
+                window.location.href = './order-confirm.html'  
             }
             else {
                 _mm.errorTips('请选择商品后再提交');
@@ -157,15 +157,15 @@ var page = {
     // 加载购物车信息
     loadCart: function () {
         var _this = this;
-        
+        // loading
+        // $pageWrap.html('<div class="loading"></div>');
         // 获取购物车列表
         _cart.getCartList(function(res) {
             _this.renderCart(res);
         }, function(errMsg){
             _this.showCartError();
         });  
-        // loading
-        // $pageWrap.html('<div class="loading"></div>');
+       
       
     },
     // 渲染购物车,data表示购物车信息

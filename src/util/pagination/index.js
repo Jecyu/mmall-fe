@@ -2,7 +2,7 @@
  * @Author: jeCyu
  * @Date: 2017-10-15 7:17:27 pm 
  * @Modified By: jeCyu 
- * @Last Modified time: 2017-10-16 10:49:19 am 
+ * @Last Modified time: 2017-10-18 11:39:28 pm 
  */
 
 'use strict'
@@ -44,7 +44,7 @@ Pagination.prototype.render = function(userOption) {
         return;
     }
     // 判断是否只有一页
-    if(!(this.option.pages >= 1)) {
+    if(!(this.option.pages > 1)) {
         return;
     }
     // 渲染分页内容
