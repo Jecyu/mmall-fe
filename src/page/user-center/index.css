@@ -1,0 +1,18 @@
+/**
+ * @Author: jeCyu
+ * @Date: 2017-10-14 9:37:26 am 
+ * @Modified By: jeCyu 
+ * @Last Modified time: 2017-10-14 10:39:13 am 
+ */
+ 
+ .form-line {
+     height: 30px;
+     font-size: 14px;
+     line-height: 30px;
+ }
+
+ .form-line .label {
+     display: inline-block;
+     width: 60px;
+     text-align: center;
+ }
